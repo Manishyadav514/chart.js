@@ -84,9 +84,11 @@ const FirstChart = () => {
   });
 
   return (
-    <div className="">
-      <span className="text-8xl">Chart.js Demo</span>
-      <canvas id="myChart" ref={canvasEl} height="100" />
+    <div className="flex h-screen w-full max-w-[1600px] justify-center items-center flex-col gap-20 p-20 phone:p-2 tablet:p-4">
+      <div className="flex flex-nowrap w-full justify-center items-center text-8xl tablet:5xl phone:text-2xl">
+        <p> Line Chart</p>
+      </div>
+      <canvas id="myChart" ref={canvasEl} />
     </div>
   );
 };

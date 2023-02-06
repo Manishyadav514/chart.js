@@ -11,7 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <FirstChart />
+        <div className="flex flex-col justify-center items-center">
+          <FirstChart />
+        </div>
       </main>
     </>
   );
