@@ -1,5 +1,12 @@
 import Head from "next/head";
-import FirstChart from "@/components/FirstChart";
+import { PieChart } from "@/chart/PieChart";
+import { RadarChart } from "@/chart/RadarChart";
+import { PolarAreaChart } from "@/chart/PolarAreaChart";
+import LineChart from "@/chart/LineChart";
+import BarChart from "@/chart/BarChart";
+import BubbleChart from "@/chart/BubbleChart";
+import DoughnutChart from "@/chart/DoughnutChart";
+import ScatterChart from "@/chart/ScatterChart";
 
 export default function Home() {
   return (
@@ -11,8 +18,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="flex flex-col justify-center items-center">
-          <FirstChart />
+        <div className="flex flex-col mt-8 phone:mt-0 justify-center items-center phone:gap-12  gap-[300px]">
+          <BarChart />
+          <BubbleChart />
+          <DoughnutChart />
+          <LineChart />
+          <PieChart />
+          <PolarAreaChart />
+          <RadarChart />
+          <ScatterChart />
         </div>
       </main>
     </>
